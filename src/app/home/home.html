@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Bite Me
+    </ion-title>
+    <!-- <ion-buttons end>
+      <button ion-button icon-only (click)="addItem()"><ion-icon name="add-circle"></ion-icon></button>
+    </ion-buttons> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- <h1>Hi {{displayName}}</h1>
+  
+  <button ion-button outline (click)="signInWithFacebook()">Login</button>
+  <button ion-button outline (click)="signOut()">Logout</button> -->
+    <ion-row responsive-sm>
+      <ion-col center col-9>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="newItem" placeholder="What do you need to buy?"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col center col-1>
+        <button ion-button (click)="addItem()" color="tertiary">Add me!</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-list no-lines class="list-items">
+      <ion-item *ngFor="let item of itemsList" (click)="removeItem(item.key)" text-capitalize color="secondary">{{item.title}}</ion-item>
+    </ion-list>
+    
+</ion-content>

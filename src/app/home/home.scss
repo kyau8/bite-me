@@ -1,0 +1,19 @@
+page-home {
+    .toolbar-background {
+        background: #E9B000;
+    }
+    .toolbar-title {
+        color: white;
+        font-size: 2.2rem;
+    }
+    ion-content {
+        // Background credits to https://www.freepik.com/free-photos-vectors/food">Food vector created by Macrovector - Freepik.com
+        background-image: url('../../assets/imgs/veggies.jpg');
+        background-size: contain;
+        background-position: center center;
+    }
+    .list-items {
+        box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.582);
+        margin-top: 15px;
+    }
+}
