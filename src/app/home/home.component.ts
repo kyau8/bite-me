@@ -12,7 +12,7 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.component.html'
 })
 
 export class HomePage implements OnInit {
